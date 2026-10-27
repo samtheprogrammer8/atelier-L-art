@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atelier L'art – Kursangebote</title>
+    <!-- HIER wird deine externe CSS-Datei geladen -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="kurse-page">
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Über atelier L'art</a></li>
+        <li><a href="kurse.html">Kurse</a></li>
+        <li><a href="angebote.html">Angebote</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li class="instagram-nav">
+            <a href="https://www.instagram.com/atelierlart_" target="_blank" class="instagram-flower">❀ Instagram</a>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Kreative Kurse</h1>
+    <p>Entdecke meine liebevoll gestalteten Workshops für kreative Momente.</p>
+</header>
+
+<main>
+
+<section class="intro">
+    <h2>Meine aktuellen Kurse</h2>
+    <p>Atelier L'art bietet dir kreative Auszeiten, in denen du mit deinen Händen etwas Schönes erschaffen kannst.</p>
+</section>
+
+<!-- Kurs 1 -->
+<section class="kurs">
+    <div class="kurs-header">
+        <h3>❀ Adventskranz (Ab 16.11 bis 29.11)</h3>
+        <button class="buchen-btn open-course-popup" data-popup="popup-1">Buchen</button>
+    </div>
+    <p>Stecke und dekoriere deinen eigenen Adventskranz in natürlichen Beige und Erdtönen mit edlen Goldakzenten und zaubere dir ein stimmungsvolles Schmuckstück für die Weihnachtszeit.</p>
+    <img src="Kranz.jpg" alt="Weihnachtskranz Kurs">
+</section>
+
+<!-- Kurs 2 -->
+<section class="kurs">
+    <div class="kurs-header">
+        <h3>❀ Blumengesteck selbst gestalten</h3>
+        <button class="buchen-btn open-course-popup" data-popup="popup-2">Buchen</button>
+    </div>
+    <p>In diesem Kurs lernst du, wie du ein wunderschönes Blumengesteck kreierst – perfekt als Geschenk oder für dein Zuhause.</p>
+    <img src="bilder_blumenkurs.jpg" alt="Blumenkurs">
+</section>
+
+<!-- Kurs 3 -->
+<section class="kurs">
+    <div class="kurs-header">
+        <h3>❀ Taschentuch‑Box kreativ gestalten</h3>
+        <button class="buchen-btn open-course-popup" data-popup="popup-3">Buchen</button>
+    </div>
+    <p>Hier gestaltest du deine eigene dekorative Taschentuch‑Box ein farbenfrohes Kunstwerk, das jeden Raum verschönert.</p>
+    <img src="Kleenex.jpg" alt="Klinexx Box Kurs">
+</section>
+
+<section class="kursort">
+    <h2>📍 Kursort</h2>
+    <p>Meine kreativen Workshops finden hier statt:</p>
+    <p><strong>atelier L'art</strong><br> Wolfhalden 9427</p>
+    <a class="maps-link" href="https://www.google.com/maps?q=9427+Wolfhalden" target="_blank">
+        ➤ Auf Google Maps öffnen
+    </a>
+</section>
+
+</main>
+
+<!-- ========================================== -->
+<!-- INDIVIDUELLE KURS-POPUPS                   -->
+<!-- ========================================== -->
+
+<!-- Popup für Kurs 1 (Adventskranz) -->
+<div id="popup-1" class="popup-overlay course-popup">
+    <div class="popup-content">
+        <h2>Adventskranz buchen</h2>
+        
+        <p style="color: #666; font-size: 0.95rem; font-style: italic; background: #fff8f5; padding: 8px; border-radius: 6px;">
+            Dieser Kurs ist für 2 bis 4 Personen ausgelegt.<br>
+            Kosten: 140 CHF pro Person (inkl. Material, Snack & Getränk).
+        </p>
+        
+        <p>Bitte teile mir in deiner Nachricht folgendes mit:</p>
+        <ul>
+            <li>Gewünschtes Datum</li>
+            <li>Anzahl Personen</li>
+        </ul>
+        
+        <p>Klicke hier, um mir direkt eine E-Mail zu senden:</p>
+        <a href="mailto:atelierlart@gmx.ch?subject=Buchungsanfrage:%20Adventskranz&body=Hallo,%20ich%20moechte%20den%20Adventskranz-Kurs%20buchen." style="color: #8c5840; text-decoration: underline;"><strong>E-Mail senden</strong></a>
+        <br>
+        <button class="close-btn close-course-popup">Schließen</button>
+    </div>
+</div>
+
+<!-- Popup für Kurs 2 (Blumengesteck) -->
+<div id="popup-2" class="popup-overlay course-popup">
+    <div class="popup-content">
+        <h2>Blumengesteck buchen</h2>
+        
+        <p style="color: #666; font-size: 0.95rem; font-style: italic; background: #fff8f5; padding: 8px; border-radius: 6px;">
+            Dieser Kurs ist für 6 Personen ausgelegt.<br>
+            Kosten: 80 CHF pro Person (inkl. Material, Snack & Getränk).
+        </p>
+        
+        <p>Folgende Infos brauche ich von dir:</p>
+        <ul>
+            <li>Gewünschtes Datum</li>
+        </ul>
+        
+        <p>Klicke hier, um mir direkt eine E-Mail zu senden:</p>
+        <a href="mailto:atelierlart@gmx.ch?subject=Buchungsanfrage:%20Blumengesteck&body=Hallo,%20ich%20moechte%20den%20Blumengesteck-Kurs%20buchen." style="color: #8c5840; text-decoration: underline;"><strong>E-Mail senden</strong></a>
+        <br>
+        <button class="close-btn close-course-popup">Schließen</button>
+    </div>
+</div>
+
+<!-- Popup für Kurs 3 (Taschentuch-Box) -->
+<div id="popup-3" class="popup-overlay course-popup">
+    <div class="popup-content">
+        <h2>Taschentuch-Box buchen</h2>
+        
+        <p style="color: #666; font-size: 0.95rem; font-style: italic; background: #fff8f5; padding: 8px; border-radius: 6px;">
+            Dieser Kurs ist für 3 bis 6 Personen ausgelegt.<br>
+            Kosten: 40 CHF pro Person (inkl. Material, Snack & Getränk).
+        </p>
+        
+        <p>Schreibe mir einfach eine E-Mail mit:</p>
+        <ul>
+            <li>Gewünschtes Datum</li>
+            <li>Anzahl Personen</li>
+        </ul>
+        
+        <p>Klicke hier, um mir direkt eine E-Mail zu senden:</p>
+        <a href="mailto:atelierlart@gmx.ch?subject=Buchungsanfrage:%20Taschentuch-Box&body=Hallo,%20ich%20moechte%20den%20Taschentuch-Box-Kurs%20buchen." style="color: #8c5840; text-decoration: underline;"><strong>E-Mail senden</strong></a>
+        <br>
+        <button class="close-btn close-course-popup">Schließen</button>
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- WEITERE ELEMENTE & SCRIPTS                 -->
+<!-- ========================================== -->
+
+<!-- LIGHTBOX CONTAINER -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<div class="scroll-blume">❀</div>
+
+<!-- SCHWEBENDER BUTTON -->
+<button id="openBookingBtn" class="floating-booking-btn">
+    <span>❀</span> Jetzt Buchen
+</button>
+
+<!-- POPUP: Seitenauswahl (Allgemeines Menü unten rechts) -->
+<div id="bookingModal" class="booking-modal" aria-hidden="true">
+    <div class="booking-modal-content">
+        <button id="closeBookingBtn" class="close-modal-btn">&times;</button>
+        <h3>Was möchtest du buchen?</h3>
+        <p>Wähle deinen Bereich aus, um direkt zu den passenden Terminen zu gelangen:</p>
+        
+        <div class="booking-options">
+            <a href="kurse.html" class="modal-option-btn">
+                <span class="option-icon">✂️</span>
+                <span class="option-text"><strong>Workshops & Kurse</strong><br><small>Floristik-Workshops & Events</small></span>
+            </a>
+            <a href="angebote.html" class="modal-option-btn">
+                <span class="option-icon">❀</span>
+                <span class="option-text"><strong>Angebote & Services</strong><br><small>Hochzeiten, Blumen & Karten</small></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie-Banner -->
+<div id="cookieBanner" style="position: fixed !important; bottom: 0 !important; left: 0 !important; width: 100% !important; background: #fff8f5 !important; border-top: 1px solid #ebd5cc !important; padding: 15px 20px !important; box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1) !important; display: flex !important; justify-content: space-between !important; align-items: center !important; z-index: 999999 !important; box-sizing: border-box !important; flex-wrap: wrap !important; gap: 10px !important;">
+    <div style="flex: 1; min-width: 280px;">
+        <p style="margin: 0 !important; font-size: 14px !important; color: #5a4a42 !important; line-height: 1.4 !important; font-family: inherit !important;">
+            🍪 Wir nutzen Cookies und 
+            <a href="https://policies.google.com/privacy?hl=de" target="_blank" style="color: #8c5840 !important; text-decoration: underline !important;">Google Maps</a>, 
+            um Inhalte anzuzeigen. Mehr dazu im 
+            <a href="impressum.html" style="color: #8c5840 !important; text-decoration: underline !important;">Impressum</a>.
+        </p>
+    </div>
+    <div>
+        <button id="acceptCookiesBtn" style="background: #8c5840 !important; color: #fff !important; border: none !important; padding: 8px 18px !important; cursor: pointer !important; border-radius: 6px !important; font-size: 14px !important; font-weight: 500 !important;">Einverstanden</button>
+    </div>
+</div>
+
+<!-- Blumenranke -->
+<div class="blumenranke">
+    <svg viewBox="0 0 100 2000" class="ranke-svg" aria-hidden="true">
+        <path d="M50 0 C40 150 60 300 50 450 C40 600 60 750 50 900 C40 1050 60 1200 50 1350 C40 1500 60 1650 50 1800 C45 1900 55 2000 50 2100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M50 200 C25 230 25 260 50 290" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 500 C75 530 75 560 50 590" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 800 C25 830 25 860 50 890" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1100 C75 1130 75 1160 50 1190" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1400 C25 1430 25 1460 50 1490" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1700 C75 1730 75 1760 50 1790" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="50" y="180" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="460" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="760" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1080" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1380" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1680" font-size="32" text-anchor="middle">❀</text>
+    </svg>
+</div>
+
+<script>
+    // 1. Lightbox Logik
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    if (lightbox && lightboxImg) {
+        document.querySelectorAll('.kurs img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    }
+
+    // 2. Skript für die individuellen Kurs-Popups
+    const courseBtns = document.querySelectorAll('.open-course-popup');
+    const closeCourseBtns = document.querySelectorAll('.close-course-popup');
+    const allCoursePopups = document.querySelectorAll('.course-popup');
+
+    // Button öffnet das dazugehörige Popup (über data-popup)
+    courseBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetPopupId = btn.getAttribute('data-popup');
+            const targetPopup = document.getElementById(targetPopupId);
+            if(targetPopup) {
+                targetPopup.style.display = 'flex';
+                targetPopup.classList.add('active');
+            }
+        });
+    });
+
+    // Schließen-Buttons innerhalb der Popups
+    closeCourseBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const popupToClose = e.target.closest('.course-popup');
+            if(popupToClose) {
+                popupToClose.style.display = 'none';
+                popupToClose.classList.remove('active');
+            }
+        });
+    });
+
+    // 3. Floating Button & Allgemeine Seitenauswahl
+    const selectionModal = document.getElementById('bookingModal');
+    const floatingBtn = document.getElementById('openBookingBtn');
+    const closeSelectionBtn = document.getElementById('closeBookingBtn');
+
+    if (floatingBtn) {
+        floatingBtn.addEventListener('click', () => {
+            selectionModal.style.display = 'flex';
+            selectionModal.classList.add('active');
+        });
+    }
+
+    if (closeSelectionBtn) {
+        closeSelectionBtn.addEventListener('click', () => {
+            selectionModal.style.display = 'none';
+            selectionModal.classList.remove('active');
+        });
+    }
+
+    // 4. Popups schließen bei Klick auf den grauen Hintergrund
+    window.addEventListener('click', (event) => {
+        // Schließe jedes Kurs-Popup
+        allCoursePopups.forEach(popup => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+                popup.classList.remove('active');
+            }
+        });
+        // Schließe das Seitenauswahl-Menü
+        if (event.target === selectionModal) {
+            selectionModal.style.display = 'none';
+            selectionModal.classList.remove('active');
+        }
+    });
+
+    // 5. Cookie Banner Logik
+    const cookieBanner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('acceptCookiesBtn');
+
+    if (localStorage.getItem('atelierCookiesAccepted')) {
+        cookieBanner.style.display = 'none';
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('atelierCookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

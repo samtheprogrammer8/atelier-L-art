@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier L'art – Galerie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Über atelier L'art</a></li>
+        <li><a href="kurse.html">Kurse</a></li>
+        <li><a href="angebote.html">Angebote</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li class="instagram-nav">
+            <a href="https://www.instagram.com/atelierlart_" target="_blank" class="instagram-flower">❀ Instagram</a>
+        </li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Galerie</h1>
+    <p>Einblicke in meine kreativen Werke .</p>
+</header>
+
+<main>
+
+<section class="kurs">
+    <h3>Meine schönsten Momente</h3>
+
+    <div class="galerie-grid">
+        <img src="bilder_hochzeitsdeko.jpg" alt="Hochzeitsdeko">
+        <img src="bilder_blumenkurs.jpg" alt="Blumengesteck">
+        <img src="Galerie1.jpg" alt="Klinexx Box">
+        <img src="Galerie2.jpg" alt="Klinexx Box">
+        <img src="Galerie3.jpg" alt="Klinexx Box">
+        <img src="Glerie4.Jpg" alt="Klinexx Box">
+        <img src="Galerie5.Jpg" alt="Hochzeitsdeko">
+        <img src="Galerie6.Jpg" alt="Blumengesteck">
+        <img src="Galerie7.JPG" alt="Klinexx Box">
+        <img src="Glerie8.Jpg" alt="Klinexx Box">
+        <img src="Galerie15.jpg" alt="Klinexx Box">
+        <img src="Galerie16.jpg" alt="Klinexx Box">
+        <img src="Galerie11.jpg" alt="Hochzeitsdeko">
+        <img src="Galerie12.jpg" alt="Blumengesteck">
+        <img src="Galerie13.jpg" alt="Klinexx Box">
+        <img src="Galerie14.jpg" alt="Hochzeitsdeko">
+        <img src="Galerie9.jpg" alt="Blumengesteck">
+        <img src="Galerie10.jpg" alt="Klinexx Box">
+    </div>
+
+</section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- DEKO-BLUME LINKS UNTEN -->
+<div class="scroll-blume">❀</div>
+
+<!-- BUCHEN BUTTON RECHTS UNTEN -->
+<button id="openBookingBtn" class="floating-booking-btn">
+    <span>❀</span> Jetzt Buchen
+</button>
+
+<!-- POPUP FENSTER (MODAL) -->
+<div id="bookingModal" class="booking-modal" aria-hidden="true">
+    <div class="booking-modal-content">
+        <button id="closeBookingBtn" class="close-modal-btn">&times;</button>
+        <h3>Was möchtest du buchen?</h3>
+        <p>Wähle deinen Bereich aus, um direkt zu den passenden Terminen zu gelangen:</p>
+        
+        <div class="booking-options">
+            <a href="kurse.html" class="modal-option-btn">
+                <span class="option-icon">✂️</span>
+                <span class="option-text"><strong>Workshops & Kurse</strong><br><small>Floristik-Workshops & Events</small></span>
+            </a>
+            
+            <a href="angebote.html" class="modal-option-btn">
+                <span class="option-icon">❀</span>
+                <span class="option-text"><strong>Angebote & Services</strong><br><small>Hochzeiten, Blumen & Karten</small></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- JAVASCRIPT LOGIK -->
+<script>
+    // 1. Lightbox Logik für Galeriebilder
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    if (lightbox && lightboxImg) {
+        document.querySelectorAll('.kurs img, .galerie-grid img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    }
+
+    // 2. Buchen Modal Logik
+    const modal = document.getElementById('bookingModal');
+    const openBtn = document.getElementById('openBookingBtn');
+    const closeBtn = document.getElementById('closeBookingBtn');
+
+    if (openBtn && modal && closeBtn) {
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+    }
+</script>
+<div class="blumenranke">
+    <svg viewBox="0 0 100 2000" class="ranke-svg" aria-hidden="true">
+        <path d="M50 0 C40 150 60 300 50 450 C40 600 60 750 50 900 C40 1050 60 1200 50 1350 C40 1500 60 1650 50 1800 C45 1900 55 2000 50 2100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M50 200 C25 230 25 260 50 290" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 500 C75 530 75 560 50 590" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 800 C25 830 25 860 50 890" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1100 C75 1130 75 1160 50 1190" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1400 C25 1430 25 1460 50 1490" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M50 1700 C75 1730 75 1760 50 1790" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="50" y="180" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="460" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="760" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1080" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1380" font-size="32" text-anchor="middle">❀</text>
+        <text x="50" y="1680" font-size="32" text-anchor="middle">❀</text>
+    </svg>
+</div>
+</body>
+</html>
